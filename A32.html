@@ -1,0 +1,33 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maa Saraswati Compputer Institute
+  </title>
+ 
+ 
+</head>
+<body>
+
+  <h2> Select Amount</h2>
+
+  <input type="range" id="rangeInput" min="100" max="10000" >
+  Rs. <span id="range Value">600</span></div>
+
+  <script>
+    const rangeInput = document.getElementById('rangeInput');
+    const rangeValue = document.getElementById('rangeValue');
+
+    rangeInput.addEventListener('input', function () {
+      rangeValue.textContent = this.value;
+    });
+  </script>
+
+</body>
+</html>
+
+		
+		
+		
+		
+		

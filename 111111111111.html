@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maa Saraswati Computer Institute</title>
+  <style>
+    :root {
+      --red: #e60000;
+      --blue: #0044cc;
+      --yellow: #ffcc00;
+      --light-bg: #f9f9f9;
+      --dark-text: #222;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, var(--red), var(--blue));
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+    nav {
+      background-color: var(--yellow);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #000;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #fff200;
+      border-radius: 5px;
+    }
+    .hero {
+      background-color: var(--blue);
+      color: white;
+      text-align: center;
+      padding: 8px ;
+	 }
+	 
+	 
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+    }
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 25px;
+      color: var(--red);
+    }
+    .section ul {
+      font-size: 18px;
+      list-style-type: square;
+      margin-left: 20px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: var(--red);
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #cc0000;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: var(--blue);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Maa Saraswati Computer Institute</h1>
+    <p>Babaganj Chauraha, Bahraich | 📞 7379322646, 7379042215</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#courses">Courses</a>
+    <a href="#admission">Admission</a>
+    <a href="#exam">Online Exam</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Welcome to Digital Learning</h2>
+    <p>सरल, प्रमाणित और व्यावसायिक कंप्यूटर शिक्षा</p>
+  </div>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Maa Saraswati Computer Institute एक अग्रणी कंप्यूटर प्रशिक्षण केंद्र है जहाँ छात्रों को उच्च गुणवत्ता वाली शिक्षा, प्रमाण पत्र और कंप्यूटर कौशल सिखाए जाते हैं।</p>
+  </section>
+
+  <section class="section" id="courses">
+    <h2>Our Courses</h2>
+    <ul>
+      <li>ADCA</li>
+      <li>DCA</li>
+      <li>O-Level</li>
+      <li>CCC, CCA, COBM</li>
+      <li>Hindi & English Typing</li>
+      <li>Tally Prime with GST</li>
+      <li>ADIT, DEO, PPT</li>
+    </ul>
+  </section>
+
+  <section class="section" id="admission">
+    <h2>Admission Form</h2>
+    <form action="#" method="POST">
+     <fieldset p id="addmission">
+      <legend>Online Admission</legend>
+      <form>
+        Student Name<br>
+        <input type="text" name="name" id="form-box"><br><br>
+
+        Mobile Number<br>
+        <input type="tel" name="mobile" maxlength="10" id="form-box"><br><br>
+
+        Aadhaar Number<br>
+        <input type="text" name="aadhaar" maxlength="12" id="form-box"><br><br>
+
+        Address<br>
+        <textarea name="address"></textarea><br><br>
+
+        Select Course<br>
+        <select name="select-course">
+          <option value="O-Level">O-Level</option>
+          <option value="ADCA">ADCA</option>
+          <option value="ADIT">ADIT</option>
+          <option value="ADCS">ADCS</option>
+          <option value="DCA">DCA</option>
+          <option value="COBM">COBM</option>
+          <option value="CCC">CCC</option>
+          <option value="Tally-Prime">Tally-Prime</option>
+          <option value="Typing">Typing Hindi/English</option>
+        </select><br><br>
+
+        Photo<br>
+        <input type="file"><br><br>
+
+        Aadhaar Photo<br>
+        <input type="file"><br><br>
+
+        Marksheet<br>
+        <input type="file"><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </fieldset>
+	</a> 
+  
+	
+	 </section>
+
+  <section class="section" id="exam">
+    <h2>Online Exam (ADCA)</h2>
+    <form action="#" method="POST">
+      <p>1. कंप्यूटर का जनक किसे कहा जाता है?</p>
+      <input type="radio" name="q1" value="a"> Charles Babbage<br>
+      <input type="radio" name="q1" value="b"> Bill Gates<br>
+      <input type="radio" name="q1" value="c"> Steve Jobs<br>
+	  <input type="radio" name="q1" value="d">Ravndra nath<br>
+
+      <p>2. CPU का पूरा नाम क्या है?</p>
+      <input type="radio" name="q2" value="a"> Central Process Unit<br>
+      <input type="radio" name="q2" value="b"> Central Processing Unit<br>
+      <input type="radio" name="q2" value="c"> Computer Processing Unit<br>
+	  <input type="radio" name="q2" value="d"> Computer Processer Unit<br>
+	  
+	  <p>2. CPU ?</p>
+      <input type="radio" name="q3" value="a"> Central Process Unit<br>
+      <input type="radio" name="q3" value="b"> Central Processing Unit<br>
+      <input type="radio" name="q3" value="c"> Computer Processing Unit<br>
+	  <input type="radio" name="q3" value="d"> Computer Processer Unit<br>
+
+      <input type="submit" value="Submit Exam" class="btn">
+    </form>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Babaganj Chauraha, Rasoolpur, Bahraich – Gonda Road</p>
+    <p>📞 7379322646, 7379042215</p>
+    <p>📧 kumarharish06534@gmail.com</p>
+  </section>
+
+  <footer>
+    © 2025 Maa Saraswati Computer Institute | All Rights Reserved
+  </footer>
+  
+  
+  
+  
+  
+  
